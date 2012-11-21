@@ -28,7 +28,9 @@ set showcmd      " Show command info along bottom right
 set showmode     " Show mode along bottom
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set pastetoggle=<F2> " Toggle :set paste when pressing F2
-set colorcolumn=81 " Highlight 81st column
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
 
 " Scroll using the scroll wheel
 map <ScrollWheelUp> <C-Y>
