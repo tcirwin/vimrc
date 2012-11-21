@@ -21,7 +21,6 @@ set smartcase    " Ignore case when lower-case, case-sensitive otherwise
 
 """""""" Other """"""""
 set number
-set mouse=a
 set visualbell   " Turn of the goddamed bell
 set hidden       " Hides buffers instead of closing them when new files are opened
 set showcmd      " Show command info along bottom right
@@ -40,12 +39,6 @@ map <ScrollWheelDown> <C-E>
 syntax on
 
 filetype plugin indent on
-
-" Pathogen
-call pathogen#infect()
-
-" Disable javascript lint on every save
-let disable_lint = 1
 
 " Change the mapleader
 let mapleader=","
